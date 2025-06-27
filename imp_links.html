@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Link Planner</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f0f4ff, #e6f7ff);
+    }
+    h1 {
+      margin-top: 80px;
+      text-align: center;
+      color: #222;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 1100px;
+    }
+
+    .card {
+      border-radius: 10px;
+      width: 100px;
+      height: 110px;
+      margin: 19px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: white;
+      
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Center the search input */
+    #searchInput {
+      display: block;
+      margin: 100px auto 20px auto; /* Top, Right, Bottom, Left */
+      padding: 5px 10px;
+      width: 200px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    #searchInput {
+      display: block;
+      margin: 10px auto 20px auto; /* Top, Right, Bottom, Left */
+      padding: 5px 10px;
+      width: 200px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+/* Add focus effect */
+#searchInput:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 8px rgba(0, 120, 215, 0.3);
+  outline: none;
+}
+.card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      
+    }
+
+
+    .link-a { background-color: #3498db; }
+    .link-b { background-color: #2ecc71; }
+    .link-c { background-color: #e67e22; }
+    .link-d { background-color: #9b59b6; }
+    .link-e { background-color: #e74c3c; }
+    .link-f { background-color: #1abc9c; }
+    .link-g { background-color: #f39c12; }
+    .link-h { background-color: #8e44ad; }
+    .link-i { background-color: #c0392b; }
+    .link-j { background-color: #16a085; }
+    .link-k { background-color: #d35400; }
+    .link-l { background-color: #2980b9; }
+  </style>
+  <script src="JS/script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+<div id="navbar-container"></div>
+
+
+  <h1> Important Links</h1>
+  <input type="text" id="searchInput" placeholder="Search" onkeyup="searchLinks()" />
+
+  <div class="container">
+    <a href="linkA_task1.html">
+    <div class="card link-a">
+      <h3>L1.5 Roster</h3>
+    </div>
+    </a>
+
+    <a href="linkB_task1.html">
+    <div class="card link-b">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkA_task1.html">
+    <div class="card link-c">
+      <h3>AEM Roster</h3>
+    </div>
+    </a>
+
+    <a href="linkB_task1.html">
+    <div class="card link-d">
+      <h3>Shopify Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkA_task1.html">
+    <div class="card link-e">
+      <h3>BAT Handbook</h3>
+    </div>
+    </a>
+
+    <a href="linkB_task1.html">
+    <div class="card link-f">
+      <h3>L1.5 Leave Tracker</h3>
+    </div>
+  </a>
+
+  <a href="linkA_task1.html">
+    <div class="card link-g">
+      <h3>Ageing Report</h3>
+    </div>
+    </a>
+
+    <a href="linkB_task1.html">
+    <div class="card link-h">
+      <h3>ADO Endmarket weekly report</h3>
+    </div>
+  </a>
+
+  <a href="linkA_task1.html">
+    <div class="card link-i">
+      <h3>ADO Handover</h3>
+    </div>
+    </a>
+
+    <a href="linkB_task1.html">
+    <div class="card link-j">
+      <h3>JP Tracker Count</h3>
+    </div>
+  </a>
+
+  <a href="https://batnowprod.service-now.com/nav_to.do?uri=%2F$pa_dashboard.do%3Fsysparm_dashboard%3D48948b1797c1de903f3ebe17f053af16%26sysparm_tab%3D09a4035797c1de903f3ebe17f053af33%26sysparm_cancelable%3Dtrue%26sysparm_editable%3Dundefined%26sysparm_active_panel%3Dfalse" target="_blank">
+    <div class="card link-k">
+      <h3>SLA Report</h3>
+    </div>
+    </a>
+
+    <a href="proactive_monitoring.html">
+    <div class="card link-l">
+      <h3>Proactive Report</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-l">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-c">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-b">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+
+  <a href="linkB_task1.html">
+    <div class="card link-a">
+      <h3>M2 Roster</h3>
+    </div>
+  </a>
+  </div>
+  <script>
+    function searchLinks() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
